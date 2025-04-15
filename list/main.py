@@ -46,3 +46,51 @@ motorcycles2 = ['honda', 'yamaha', 'suzuki']
 first_owned = motorcycles2.pop(0)
 
 print(f"A primeira moto vendida foi a {first_owned.title()}.")
+
+# Metodo remove
+
+motorcycles_remove = ['honda', 'yamaha', 'suzuki']
+
+print(motorcycles_remove)
+
+too_expensive = 'suzuki'
+
+motorcycles_remove.remove(too_expensive)
+
+print(motorcycles_remove)
+
+print(f"\nA {too_expensive.title()}")
+
+# 3.4 Lista de convidados
+
+convidados = ['Matheus', 'Silva', 'Helder']
+print(convidados)
+
+# 3.5 Adicionando outro convidado
+convidados[0] = 'Homer'
+print(convidados)
+
+# 3.6 Mais Convidados
+convidados.insert(0, 'Thanos')
+convidados.insert(1, 'Tony')
+convidados.append('Hulk')
+
+print(convidados)
+
+# 3.5 Reduzindo a lista de convidados
+
+thanos = convidados.pop(0)
+homer = convidados.pop(1)
+helder = convidados.pop(2)
+
+print(f"Lamentamos por não poder convidar o {thanos}")
+print(f"Lamentamos por não poder convidar o {homer}")
+print(f"Lamentamos por não poder convidar o {helder}")
+
+print(convidados)
+
+del convidados[0]
+del convidados[0]
+del convidados[0]
+
+print(convidados)
